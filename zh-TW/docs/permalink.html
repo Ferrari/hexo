@@ -6,7 +6,7 @@
   
   <meta name="description" content="Hexo is a simple, fast blog framework powered by Node.js.">
   
-  <link rel="stylesheet" href="/css/style.css" media="screen" type="text/css">
+  <link rel="stylesheet" href="/hexo/css/style.css" media="screen" type="text/css">
   <!--[if lt IE 9]><script src="//html5shiv.googlecode.com/svn/trunk/html5.js"></script><![endif]-->
   <script src="//ajax.googleapis.com/ajax/libs/jquery/1.8/jquery.min.js"></script>
 </head>
@@ -14,13 +14,13 @@
 <body>
   <div class="wrapper">
     <header id="header">
-<h1><a href="/zh-TW/">Hexo</a></h1>
+<h1><a href="/hexo/zh-TW/">Hexo</a></h1>
 <div class="clearfix"></div>
 <nav id="main-nav">
   <ul>
-    <li><a href="/zh-TW/docs/">Docs</a></li>
-    <li><a href="/zh-TW/plugins/">Plugins</a></li>
-    <li><a href="/zh-TW/themes/">Themes</a></li>
+    <li><a href="/hexo/zh-TW/docs/">Docs</a></li>
+    <li><a href="/hexo/zh-TW/plugins/">Plugins</a></li>
+    <li><a href="/hexo/zh-TW/themes/">Themes</a></li>
     <li><a href="https://github.com/tommy351/hexo">Source</a></li>
   </ul>
 </nav></header>
@@ -33,7 +33,7 @@
 <p>在<code>_config.yml</code>中的<code>permalink</code>欄位設定文章連結，預設值為：
 
 </p>
-<pre><code>permalink<span class="symbol">:</span> <span class="symbol">:year</span>/<span class="symbol">:month</span>/<span class="symbol">:day</span>/<span class="symbol">:title</span>/</code></pre>
+<pre><code><span class="symbol">permalink:</span> <span class="symbol">:year/</span><span class="symbol">:month/</span><span class="symbol">:day/</span><span class="symbol">:title/</span></code></pre>
 <p>在永久連結中可加入以下變數，必須要在變數名稱前加入<code>:</code>才有效。
 
 </p>
@@ -51,20 +51,20 @@
 <p>假設有一文章名為<code>title.md</code>，內容為：
 
 </p>
-<pre><code><span class="comment">---</span>
-<span class="title">layout</span>: post
-<span class="title">title</span>: <span class="type">Post</span> <span class="type">Title</span>
-<span class="title">date</span>: <span class="number">2012</span>-<span class="number">10</span>-<span class="number">09</span> <span class="number">14</span>:<span class="number">09</span>:<span class="number">37</span>
-<span class="title">tags</span>:
-- <span class="type">Node</span>.js
-- <span class="type">JavaScript</span>
-<span class="comment">---</span></code></pre>
+<pre><code><span class="literal">-</span><span class="literal">-</span><span class="literal">-</span>
+<span class="comment">layout:</span> <span class="comment">post</span>
+<span class="comment">title:</span> <span class="comment">Post</span> <span class="comment">Title</span>
+<span class="comment">date:</span> <span class="comment">2012</span>-<span class="comment">10</span>-<span class="comment">09</span> <span class="comment">14:09:37</span>
+<span class="comment">tags:</span>
+<span class="literal">-</span> <span class="comment">Node</span>.<span class="comment">js</span>
+<span class="literal">-</span> <span class="comment">JavaScript</span>
+<span class="literal">-</span><span class="literal">-</span><span class="literal">-</span></code></pre>
 <p>則結果會是：
 
 </p>
-<pre><code>:<span class="built_in">year</span>/:<span class="built_in">month</span>/:<span class="built_in">day</span>/:title/ => /<span class="number">2012</span>/<span class="number">10</span>/<span class="number">09</span>/title/
-:<span class="built_in">year</span>-:<span class="built_in">month</span>-:<span class="built_in">day</span>/:title/ => /<span class="number">2012</span>-<span class="number">10</span>-<span class="number">09</span>/title/
-:category/title/ => /post/title/</code></pre>
+<pre><code>:<span class="built_in">year</span>/:<span class="built_in">month</span>/:<span class="built_in">day</span>/:title/ =&gt; /<span class="number">2012</span>/<span class="number">10</span>/<span class="number">09</span>/title/
+:<span class="built_in">year</span>-:<span class="built_in">month</span>-:<span class="built_in">day</span>/:title/ =&gt; /<span class="number">2012</span>-<span class="number">10</span>-<span class="number">09</span>/title/
+:category/title/ =&gt; /post/title/</code></pre>
 </div>
 </article>
       <footer id="footer">
@@ -80,7 +80,7 @@
     </div>
     <div class="clearfix"></div>
   </div>
-  <script src="/js/main.js"></script>
+  <script src="/hexo/js/main.js"></script>
 <a href="https://github.com/tommy351/hexo"><img style="position: absolute; top: 0; right: 0; border: 0;" src="https://s3.amazonaws.com/github/ribbons/forkme_right_gray_6d6d6d.png" alt="Fork me on GitHub"></a>
 </body>
 </html>

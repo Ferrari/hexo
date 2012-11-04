@@ -6,7 +6,7 @@
   
   <meta name="description" content="Hexo is a simple, fast blog framework powered by Node.js.">
   
-  <link rel="stylesheet" href="/css/style.css" media="screen" type="text/css">
+  <link rel="stylesheet" href="/hexo/css/style.css" media="screen" type="text/css">
   <!--[if lt IE 9]><script src="//html5shiv.googlecode.com/svn/trunk/html5.js"></script><![endif]-->
   <script src="//ajax.googleapis.com/ajax/libs/jquery/1.8/jquery.min.js"></script>
 </head>
@@ -14,13 +14,13 @@
 <body>
   <div class="wrapper">
     <header id="header">
-<h1><a href="/zh-TW/">Hexo</a></h1>
+<h1><a href="/hexo/zh-TW/">Hexo</a></h1>
 <div class="clearfix"></div>
 <nav id="main-nav">
   <ul>
-    <li><a href="/zh-TW/docs/">Docs</a></li>
-    <li><a href="/zh-TW/plugins/">Plugins</a></li>
-    <li><a href="/zh-TW/themes/">Themes</a></li>
+    <li><a href="/hexo/zh-TW/docs/">Docs</a></li>
+    <li><a href="/hexo/zh-TW/plugins/">Plugins</a></li>
+    <li><a href="/hexo/zh-TW/themes/">Themes</a></li>
     <li><a href="https://github.com/tommy351/hexo">Source</a></li>
   </ul>
 </nav></header>
@@ -34,7 +34,7 @@
 <p>執行以下指令。
 
 </p>
-<pre><code class="lang-bash">hexo new_post &lt;title></code></pre>
+<pre><code class="lang-bash">hexo new_post &lt;title&gt;</code></pre>
 <p>新文章會儲存於網站根目錄的 <code>source/_posts/title.md</code> 內容為：
 
 </p>
@@ -86,16 +86,16 @@
 <p>執行以下指令。
 
 </p>
-<pre><code class="lang-bash">hexo new_page &lt;title></code></pre>
+<pre><code class="lang-bash">hexo new_page &lt;title&gt;</code></pre>
 <p>新分頁會儲存於網站根目錄的<code>source/title/index.md</code>，內容為：
 
 </p>
-<pre><code class="lang-yaml"><span class="comment">---</span>
-<span class="title">layout</span>: page
-<span class="title">title</span>: title
-<span class="title">date</span>: <span class="type">YYYY</span>-<span class="type">MM</span>-<span class="type">DD</span> <span class="type">HH</span>:mm:ss
-<span class="title">comments</span>: true
-<span class="comment">---</span></code></pre>
+<pre><code class="lang-yaml"><span class="literal">-</span><span class="literal">-</span><span class="literal">-</span>
+<span class="comment">layout:</span> <span class="comment">page</span>
+<span class="comment">title:</span> <span class="comment">title</span>
+<span class="comment">date:</span> <span class="comment">YYYY</span>-<span class="comment">MM</span>-<span class="comment">DD</span> <span class="comment">HH:mm:ss</span>
+<span class="comment">comments:</span> <span class="comment">true</span>
+<span class="literal">-</span><span class="literal">-</span><span class="literal">-</span></code></pre>
 <h3>設定</h3>
 <p>文章最前面有一段用<code>---</code>包裹的區塊，稱為 <a href="https://github.com/mojombo/jekyll/wiki/YAML-Front-Matter">YAML Front Matter</a>。你可使用 YAML 格式設定文章。
 
@@ -129,7 +129,7 @@
     </div>
     <div class="clearfix"></div>
   </div>
-  <script src="/js/main.js"></script>
+  <script src="/hexo/js/main.js"></script>
 <a href="https://github.com/tommy351/hexo"><img style="position: absolute; top: 0; right: 0; border: 0;" src="https://s3.amazonaws.com/github/ribbons/forkme_right_gray_6d6d6d.png" alt="Fork me on GitHub"></a>
 </body>
 </html>

@@ -6,7 +6,7 @@
   
   <meta name="description" content="Hexo is a simple, fast blog framework powered by Node.js.">
   
-  <link rel="stylesheet" href="/css/style.css" media="screen" type="text/css">
+  <link rel="stylesheet" href="/hexo/css/style.css" media="screen" type="text/css">
   <!--[if lt IE 9]><script src="//html5shiv.googlecode.com/svn/trunk/html5.js"></script><![endif]-->
   <script src="//ajax.googleapis.com/ajax/libs/jquery/1.8/jquery.min.js"></script>
 </head>
@@ -14,13 +14,13 @@
 <body>
   <div class="wrapper">
     <header id="header">
-<h1><a href="/">Hexo</a></h1>
+<h1><a href="/hexo/">Hexo</a></h1>
 <div class="clearfix"></div>
 <nav id="main-nav">
   <ul>
-    <li><a href="/docs/">Docs</a></li>
-    <li><a href="/plugins/">Plugins</a></li>
-    <li><a href="/themes/">Themes</a></li>
+    <li><a href="/hexo/docs/">Docs</a></li>
+    <li><a href="/hexo/plugins/">Plugins</a></li>
+    <li><a href="/hexo/themes/">Themes</a></li>
     <li><a href="https://github.com/tommy351/hexo">Source</a></li>
   </ul>
 </nav></header>
@@ -40,9 +40,9 @@
 <p><a id="structure"></a>
 </p>
 <h2>Structure</h2>
-<pre><code>|<span class="comment">-- _config.yml</span>
-|<span class="comment">-- layout</span>
-|<span class="comment">-- source</span></code></pre>
+<pre><code><span class="comment">|</span>-<span class="literal">-</span> <span class="comment">_config</span>.<span class="comment">yml</span>
+<span class="comment">|</span>-<span class="literal">-</span> <span class="comment">layout</span>
+<span class="comment">|</span>-<span class="literal">-</span> <span class="comment">source</code></pre>
 <h3>_config.yml</h3>
 <p>Theme configuration file.
 
@@ -266,37 +266,37 @@
 <p>Load CSS file.
 
 </p>
-<pre><code>&lt;<span class="string">%- css(path) %></code></pre>
+<pre><code>&lt;<span class="string">%- css(path) %&gt;</code></pre>
 <h3>js</h3>
 <p>Load JavaScript file.
 
 </p>
-<pre><code>&lt;<span class="string">%- js(path) %></code></pre>
+<pre><code>&lt;<span class="string">%- js(path) %&gt;</code></pre>
 <h3>trim</h3>
 <p>Clear spaces in string.
 
 </p>
-<pre><code>&lt;<span class="string">%- trim(string) %></code></pre>
+<pre><code>&lt;<span class="string">%- trim(string) %&gt;</code></pre>
 <h3>strip_html</h3>
 <p>Clear all HTML tags in string.
 
 </p>
-<pre><code>&lt;<span class="string">%- strip_html(string) %></code></pre>
+<pre><code>&lt;<span class="string">%- strip_html(string) %&gt;</code></pre>
 <h3>titlecase</h3>
 <p>Transform string into proper title capitalization.
 
 </p>
-<pre><code>&lt;<span class="string">%- titlecase(string) %></code></pre>
+<pre><code>&lt;<span class="string">%- titlecase(string) %&gt;</code></pre>
 <h3>partial</h3>
 <p>Load other template. Use <code>locals</code> to define variable in template. (Same as <a href="https://github.com/publicclass/express-partials">express-partials</a>)
 
 </p>
-<pre><code>&lt;<span class="string">%- partial(layout, [locals]) %></code></pre>
+<pre><code>&lt;<span class="string">%- partial(layout, [locals]) %&gt;</code></pre>
 <h3>tagcloud</h3>
 <p>Insert tag cloud.
 
 </p>
-<pre><code>&lt;<span class="string">%- tagcloud(tags, [options]) %></code></pre>
+<pre><code>&lt;<span class="string">%- tagcloud(tags, [options]) %&gt;</code></pre>
 <p><strong>Options:</strong>
 
 </p>
@@ -340,7 +340,7 @@
     </div>
     <div class="clearfix"></div>
   </div>
-  <script src="/js/main.js"></script>
+  <script src="/hexo/js/main.js"></script>
 <a href="https://github.com/tommy351/hexo"><img style="position: absolute; top: 0; right: 0; border: 0;" src="https://s3.amazonaws.com/github/ribbons/forkme_right_gray_6d6d6d.png" alt="Fork me on GitHub"></a>
 </body>
 </html>
