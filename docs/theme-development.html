@@ -53,9 +53,7 @@
 <p><a id="structure"></a>
 </p>
 <h2>Structure</h2>
-<pre><code><span class="comment">|</span>-<span class="literal">-</span> <span class="comment">_config</span>.<span class="comment">yml</span>
-<span class="comment">|</span>-<span class="literal">-</span> <span class="comment">layout</span>
-<span class="comment">|</span>-<span class="literal">-</span> <span class="comment">source</code></pre>
+<pre><code class="lang-plain"><div class="line">|-- _config.yml</div><div class="line">|-- layout</div><div class="line">|-- source</div></code></pre>
 <h3>_config.yml</h3>
 <p>Theme configuration file.
 
@@ -279,37 +277,37 @@
 <p>Load CSS file.
 
 </p>
-<pre><code>&lt;<span class="string">%- css(path) %&gt;</code></pre>
+<pre><code><div class="line">&lt;<span class="string">%- css(path) %&gt;</div></code></pre>
 <h3>js</h3>
 <p>Load JavaScript file.
 
 </p>
-<pre><code>&lt;<span class="string">%- js(path) %&gt;</code></pre>
+<pre><code><div class="line">&lt;<span class="string">%- js(path) %&gt;</div></code></pre>
 <h3>trim</h3>
 <p>Clear spaces in string.
 
 </p>
-<pre><code>&lt;<span class="string">%- trim(string) %&gt;</code></pre>
+<pre><code><div class="line">&lt;<span class="string">%- trim(string) %&gt;</div></code></pre>
 <h3>strip_html</h3>
 <p>Clear all HTML tags in string.
 
 </p>
-<pre><code>&lt;<span class="string">%- strip_html(string) %&gt;</code></pre>
+<pre><code><div class="line">&lt;<span class="string">%- strip_html(string) %&gt;</div></code></pre>
 <h3>titlecase</h3>
 <p>Transform string into proper title capitalization.
 
 </p>
-<pre><code>&lt;<span class="string">%- titlecase(string) %&gt;</code></pre>
+<pre><code><div class="line">&lt;<span class="string">%- titlecase(string) %&gt;</div></code></pre>
 <h3>partial</h3>
 <p>Load other template. Use <code>locals</code> to define variable in template. (Same as <a href="https://github.com/publicclass/express-partials">express-partials</a>)
 
 </p>
-<pre><code>&lt;<span class="string">%- partial(layout, [locals]) %&gt;</code></pre>
+<pre><code><div class="line">&lt;<span class="string">%- partial(layout, [locals]) %&gt;</div></code></pre>
 <h3>tagcloud</h3>
 <p>Insert tag cloud.
 
 </p>
-<pre><code>&lt;<span class="string">%- tagcloud(tags, [options]) %&gt;</code></pre>
+<pre><code><div class="line">&lt;<span class="string">%- tagcloud(tags, [options]) %&gt;</div></code></pre>
 <p><strong>Options:</strong>
 
 </p>
@@ -324,14 +322,7 @@
 <p><strong>Default:</strong>
 
 </p>
-<pre><code>{
-    <span class="method">min_font:</span> <span class="number">10</span>,
-    <span class="method">max_font:</span> <span class="number">20</span>,
-    <span class="method">unit:</span> <span class="string">'px'</span>,
-    <span class="method">amount:</span> <span class="number">40</span>,
-    <span class="method">orderby:</span> <span class="string">'name'</span>,
-    <span class="method">order:</span> <span class="number">1</span>
-}</code></pre>
+<pre><code><div class="line">{</div><div class="line">    <span class="method">min_font:</span> <span class="number">10</span>,</div><div class="line">    <span class="method">max_font:</span> <span class="number">20</span>,</div><div class="line">    <span class="method">unit:</span> <span class="string">'px'</span>,</div><div class="line">    <span class="method">amount:</span> <span class="number">40</span>,</div><div class="line">    <span class="method">orderby:</span> <span class="string">'name'</span>,</div><div class="line">    <span class="method">order:</span> <span class="number">1</span></div><div class="line">}</div></code></pre>
 <p><a id="source"></a>
 </p>
 <h2>Source</h2>

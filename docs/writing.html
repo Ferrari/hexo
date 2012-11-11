@@ -47,17 +47,11 @@
 <p>Execute the following command.
 
 </p>
-<pre><code class="lang-bash">hexo new_post &lt;title&gt;</code></pre>
+<pre><code class="lang-bash"><div class="line">hexo new_post &lt;title&gt;</div></code></pre>
 <p>New post will saved at <code>source/_posts/title.md</code> in the root directory with the following content.
 
 </p>
-<pre><code class="lang-yaml"><span class="comment">---</span>
-<span class="title">layout</span>: post
-<span class="title">title</span>: title
-<span class="title">date</span>: <span class="type">YYYY</span>-<span class="type">MM</span>-<span class="type">DD</span> <span class="type">HH</span>:mm:ss
-<span class="title">comments</span>: true
-<span class="title">tags</span>:
-<span class="comment">---</span></code></pre>
+<pre><code class="lang-yaml"><div class="line"><span class="comment">---</span></div><div class="line"><span class="title">layout</span>: post</div><div class="line"><span class="title">title</span>: title</div><div class="line"><span class="title">date</span>: <span class="type">YYYY</span>-<span class="type">MM</span>-<span class="type">DD</span> <span class="type">HH</span>:mm:ss</div><div class="line"><span class="title">comments</span>: true</div><div class="line"><span class="title">tags</span>:</div><div class="line"><span class="comment">---</span></div></code></pre>
 <h3>Configure</h3>
 <p>The beginning of article is a block wrapped with <code>---</code>, called <a href="https://github.com/mojombo/jekyll/wiki/YAML-Front-Matter">YAML Front Matter</a>. You can use YAML to configure posts.
 
@@ -85,30 +79,17 @@
 <li><code>source/_posts/Fruits/Apple/title.md</code> - Fruit, Apple</li>
 </ul>
 <h3>Tag</h3>
-<pre><code class="lang-yaml"><span class="preprocessor"># Single Tag</span>
-<span class="label">tags:</span> Apple
-
-<span class="preprocessor"># Multiple Tags</span>
-<span class="label">tags:</span> [Apple, Banana]
-
-<span class="label">tags:</span>
-- Apple
-- Banana</code></pre>
+<pre><code class="lang-yaml"><div class="line"><span class="preprocessor"># Single Tag</span></div><div class="line"><span class="label">tags:</span> Apple</div><br><div class="line"><span class="preprocessor"># Multiple Tags</span></div><div class="line"><span class="label">tags:</span> [Apple, Banana]</div><br><div class="line"><span class="label">tags:</span></div><div class="line">- Apple</div><div class="line">- Banana</div></code></pre>
 <h2>Page</h2>
 <h3>Create</h3>
 <p>Execute the following command.
 
 </p>
-<pre><code class="lang-bash">hexo new_page &lt;title&gt;</code></pre>
+<pre><code class="lang-bash"><div class="line">hexo new_page &lt;title&gt;</div></code></pre>
 <p>New page will saved at <code>source/title/index.md</code> in the root directory with the following content.
 
 </p>
-<pre><code class="lang-yaml"><span class="literal">-</span><span class="literal">-</span><span class="literal">-</span>
-<span class="comment">layout:</span> <span class="comment">page</span>
-<span class="comment">title:</span> <span class="comment">title</span>
-<span class="comment">date:</span> <span class="comment">YYYY</span>-<span class="comment">MM</span>-<span class="comment">DD</span> <span class="comment">HH:mm:ss</span>
-<span class="comment">comments:</span> <span class="comment">true</span>
-<span class="literal">-</span><span class="literal">-</span><span class="literal">-</span></code></pre>
+<pre><code class="lang-yaml"><div class="line"><span class="literal">-</span><span class="literal">-</span><span class="literal">-</span></div><div class="line"><span class="comment">layout:</span> <span class="comment">page</span></div><div class="line"><span class="comment">title:</span> <span class="comment">title</span></div><div class="line"><span class="comment">date:</span> <span class="comment">YYYY</span>-<span class="comment">MM</span>-<span class="comment">DD</span> <span class="comment">HH:mm:ss</span></div><div class="line"><span class="comment">comments:</span> <span class="comment">true</span></div><div class="line"><span class="literal">-</span><span class="literal">-</span><span class="literal">-</span></div></code></pre>
 <h3>Configure</h3>
 <p>The beginning of article is a block wrapped with <code>---</code>, called <a href="https://github.com/mojombo/jekyll/wiki/YAML-Front-Matter">YAML Front Matter</a>. You can use YAML to configure posts.
 
@@ -126,7 +107,7 @@
 <p>Execute the following command to transform articles into static files.
 
 </p>
-<pre><code class="lang-bash">hexo generate</code></pre>
+<pre><code class="lang-bash"><div class="line">hexo generate</div></code></pre>
 </div>
 </article>
       <footer id="footer"><div class="alignleft">

@@ -53,9 +53,7 @@
 <p><a id="structure"></a>
 </p>
 <h2>結構</h2>
-<pre><code><span class="comment">|</span>-<span class="literal">-</span> <span class="comment">_config</span>.<span class="comment">yml</span>
-<span class="comment">|</span>-<span class="literal">-</span> <span class="comment">layout</span>
-<span class="comment">|</span>-<span class="literal">-</span> <span class="comment">source</code></pre>
+<pre><code class="lang-plain"><div class="line">|-- _config.yml</div><div class="line">|-- layout</div><div class="line">|-- source</div></code></pre>
 <h3>_config.yml</h3>
 <p>主題的設定檔案。
 
@@ -279,37 +277,37 @@
 <p>載入 CSS 檔案。
 
 </p>
-<pre><code>&lt;<span class="string">%- css(path) %&gt;</code></pre>
+<pre><code><div class="line">&lt;<span class="string">%- css(path) %&gt;</div></code></pre>
 <h3>js</h3>
 <p>載入 JavaScript 檔案。
 
 </p>
-<pre><code>&lt;<span class="string">%- js(path) %&gt;</code></pre>
+<pre><code><div class="line">&lt;<span class="string">%- js(path) %&gt;</div></code></pre>
 <h3>trim</h3>
 <p>清除字串中的空白。
 
 </p>
-<pre><code>&lt;<span class="string">%- trim(string) %&gt;</code></pre>
+<pre><code><div class="line">&lt;<span class="string">%- trim(string) %&gt;</div></code></pre>
 <h3>strip_html</h3>
 <p>清除字串中的所有 HTML 標籤。
 
 </p>
-<pre><code>&lt;<span class="string">%- strip_html(string) %&gt;</code></pre>
+<pre><code><div class="line">&lt;<span class="string">%- strip_html(string) %&gt;</div></code></pre>
 <h3>titlecase</h3>
 <p>將字串轉為合適的標題大寫。
 
 </p>
-<pre><code>&lt;<span class="string">%- titlecase(string) %&gt;</code></pre>
+<pre><code><div class="line">&lt;<span class="string">%- titlecase(string) %&gt;</div></code></pre>
 <h3>partial</h3>
 <p>載入其他模版，可使用<code>locals</code>指定模版內的變數。（使用方法與 <a href="https://github.com/publicclass/express-partials">express-partials</a> 相同）
 
 </p>
-<pre><code>&lt;<span class="string">%- partial(layout, [locals]) %&gt;</code></pre>
+<pre><code><div class="line">&lt;<span class="string">%- partial(layout, [locals]) %&gt;</div></code></pre>
 <h3>tagcloud</h3>
 <p>插入標籤雲（Tag Cloud）。
 
 </p>
-<pre><code>&lt;<span class="string">%- tagcloud(tags, [options]) %&gt;</code></pre>
+<pre><code><div class="line">&lt;<span class="string">%- tagcloud(tags, [options]) %&gt;</div></code></pre>
 <p><strong>選項：</strong>
 
 </p>
@@ -324,14 +322,7 @@
 <p><strong>預設值：</strong>
 
 </p>
-<pre><code>{
-    <span class="method">min_font:</span> <span class="number">10</span>,
-    <span class="method">max_font:</span> <span class="number">20</span>,
-    <span class="method">unit:</span> <span class="string">'px'</span>,
-    <span class="method">amount:</span> <span class="number">40</span>,
-    <span class="method">orderby:</span> <span class="string">'name'</span>,
-    <span class="method">order:</span> <span class="number">1</span>
-}</code></pre>
+<pre><code><div class="line">{</div><div class="line">    <span class="method">min_font:</span> <span class="number">10</span>,</div><div class="line">    <span class="method">max_font:</span> <span class="number">20</span>,</div><div class="line">    <span class="method">unit:</span> <span class="string">'px'</span>,</div><div class="line">    <span class="method">amount:</span> <span class="number">40</span>,</div><div class="line">    <span class="method">orderby:</span> <span class="string">'name'</span>,</div><div class="line">    <span class="method">order:</span> <span class="number">1</span></div><div class="line">}</div></code></pre>
 <p><a id="source"></a>
 </p>
 <h2>原始碼</h2>

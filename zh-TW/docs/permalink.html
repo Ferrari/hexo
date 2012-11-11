@@ -46,7 +46,7 @@
 <p>在<code>_config.yml</code>中的<code>permalink</code>欄位設定文章連結，預設值為：
 
 </p>
-<pre><code><span class="symbol">permalink:</span> <span class="symbol">:year/</span><span class="symbol">:month/</span><span class="symbol">:day/</span><span class="symbol">:title/</span></code></pre>
+<pre><code><div class="line"><span class="symbol">permalink:</span> <span class="symbol">:year/</span><span class="symbol">:month/</span><span class="symbol">:day/</span><span class="symbol">:title/</span></div></code></pre>
 <p>在永久連結中可加入以下變數，必須要在變數名稱前加入<code>:</code>才有效。
 
 </p>
@@ -64,20 +64,11 @@
 <p>假設有一文章名為<code>title.md</code>，內容為：
 
 </p>
-<pre><code><span class="literal">-</span><span class="literal">-</span><span class="literal">-</span>
-<span class="comment">layout:</span> <span class="comment">post</span>
-<span class="comment">title:</span> <span class="comment">Post</span> <span class="comment">Title</span>
-<span class="comment">date:</span> <span class="comment">2012</span>-<span class="comment">10</span>-<span class="comment">09</span> <span class="comment">14:09:37</span>
-<span class="comment">tags:</span>
-<span class="literal">-</span> <span class="comment">Node</span>.<span class="comment">js</span>
-<span class="literal">-</span> <span class="comment">JavaScript</span>
-<span class="literal">-</span><span class="literal">-</span><span class="literal">-</span></code></pre>
+<pre><code><div class="line"><span class="literal">-</span><span class="literal">-</span><span class="literal">-</span></div><div class="line"><span class="comment">layout:</span> <span class="comment">post</span></div><div class="line"><span class="comment">title:</span> <span class="comment">Post</span> <span class="comment">Title</span></div><div class="line"><span class="comment">date:</span> <span class="comment">2012</span>-<span class="comment">10</span>-<span class="comment">09</span> <span class="comment">14:09:37</span></div><div class="line"><span class="comment">tags:</span></div><div class="line"><span class="literal">-</span> <span class="comment">Node</span>.<span class="comment">js</span></div><div class="line"><span class="literal">-</span> <span class="comment">JavaScript</span></div><div class="line"><span class="literal">-</span><span class="literal">-</span><span class="literal">-</span></div></code></pre>
 <p>則結果會是：
 
 </p>
-<pre><code>:<span class="built_in">year</span>/:<span class="built_in">month</span>/:<span class="built_in">day</span>/:title/ =&gt; /<span class="number">2012</span>/<span class="number">10</span>/<span class="number">09</span>/title/
-:<span class="built_in">year</span>-:<span class="built_in">month</span>-:<span class="built_in">day</span>/:title/ =&gt; /<span class="number">2012</span>-<span class="number">10</span>-<span class="number">09</span>/title/
-:category/title/ =&gt; /post/title/</code></pre>
+<pre><code><div class="line">:<span class="built_in">year</span>/:<span class="built_in">month</span>/:<span class="built_in">day</span>/:title/ =&gt; /<span class="number">2012</span>/<span class="number">10</span>/<span class="number">09</span>/title/</div><div class="line">:<span class="built_in">year</span>-:<span class="built_in">month</span>-:<span class="built_in">day</span>/:title/ =&gt; /<span class="number">2012</span>-<span class="number">10</span>-<span class="number">09</span>/title/</div><div class="line">:category/title/ =&gt; /post/title/</div></code></pre>
 </div>
 </article>
       <footer id="footer"><div class="alignleft">
