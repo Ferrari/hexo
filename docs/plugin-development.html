@@ -52,6 +52,8 @@
 <li><a href="#processor">Processor</a></li>
 <li><a href="#tag">Tag</a></li>
 <li><a href="#console">Console</a></li>
+<li><a href="#migrator">Migrator</a></li>
+<li><a href="#publish">Publish</a></li>
 <li><a href="#source">Source</a></li>
 </ul>
 <p><a id="variable"></a>
@@ -249,6 +251,31 @@
 </p>
 <pre><code class="lang-bash"><div class="line">hexo config</div></code></pre>
 <pre><code class="lang-javascript"><div class="line">hexo.extend.console.register(<span class="string">'config'</span>, <span class="string">'Display configuration'</span>, <span class="keyword">function</span>(args){</div><div class="line">  console.log(hexo.config);</div><div class="line">});</div></code></pre>
+<p><a id="migrator"></a>
+</p>
+<h2>Migrator</h2>
+<p>Migrator helps you migrate from other system easily.
+
+</p>
+<h3>Syntax</h3>
+<pre><code class="lang-javascript"><div class="line">hexo.extend.migrator.register(tag, iterator)</div></code></pre>
+<ul>
+<li><strong>tag</strong> - Tag</li>
+<li><strong>iterator(args)</strong><ul>
+<li><strong>args</strong> - Arguments</li>
+</ul>
+</li>
+</ul>
+<p><a id="publish"></a>
+</p>
+<h2>Publish</h2>
+<p>Execute the following command to publish your plugin to NPM registry. Remember to test it before published.
+
+</p>
+<pre><code class="lang-bash"><div class="line">npm publish</div></code></pre>
+<p>Check <a href="https://npmjs.org/doc">npm</a> for more info.
+
+</p>
 <p><a id="source"></a>
 </p>
 <h2>Source</h2>

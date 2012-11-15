@@ -52,6 +52,7 @@
 <li><a href="#processor">Processor</a></li>
 <li><a href="#tag">Tag</a></li>
 <li><a href="#console">Console</a></li>
+<li><a href="#migrator">Migrator</a></li>
 <li><a href="#development">開發</a></li>
 </ul>
 <p><a id="usage"></a>
@@ -66,12 +67,12 @@
 <p>在<code>_config.yml</code>的<code>plugins</code>欄位中加入外掛名稱。
 
 </p>
-<pre><code class="lang-yaml"><div class="line"><span class="comment">plugins:</span></div><div class="line"><span class="literal">-</span> <span class="comment">plugin</span>-<span class="comment">one</span></div><div class="line"><span class="literal">-</span> <span class="comment">plugin</span>-<span class="comment">name</div></code></pre>
+<pre><code class="lang-plain"><div class="line">plugins:</div><div class="line">- plugin-one</div><div class="line">- plugin-name</div></code></pre>
 <h3>停用</h3>
 <p>從<code>_config.yml</code>的<code>plugins</code>欄位中移除外掛名稱。
 
 </p>
-<pre><code class="lang-yaml"><div class="line"><span class="comment">plugins:</span></div><div class="line"><span class="literal">-</span> <span class="comment">plugin</span>-<span class="comment">one</div></code></pre>
+<pre><code class="lang-plain"><div class="line">plugins:</div><div class="line">- plugin-one</div></code></pre>
 <h3>更新</h3>
 <p>執行以下指令。
 
@@ -134,6 +135,15 @@
 <p>Console 可讓你在命令列介面（CLI）中執行指令。
 
 </p>
+<p><a id="migrator"></a>
+</p>
+<h2>Migrator</h2>
+<p>Migrator 讓你輕鬆地從其他系統遷移。
+
+</p>
+<ul>
+<li><a href="https://github.com/tommy351/hexo-plugins/tree/master/migrator/rss">hexo-migrator-rss</a> - RSS</li>
+</ul>
 <p><a id="development"></a>
 </p>
 <h2>開發</h2>

@@ -52,6 +52,7 @@
 <li><a href="#processor">Processor</a></li>
 <li><a href="#tag">Tag</a></li>
 <li><a href="#console">Console</a></li>
+<li><a href="#migrator">Migrator</a></li>
 <li><a href="#development">Development</a></li>
 </ul>
 <p><a id="usage"></a>
@@ -61,17 +62,17 @@
 <p>Execute the following command.
 
 </p>
-<pre><code><div class="line">npm install <span class="tag">&lt;<span class="title">plugin-name</span>&gt;</span></div></code></pre>
+<pre><code class="lang-bash"><div class="line">npm install &lt;plugin-name&gt;</div></code></pre>
 <h3>Enable</h3>
 <p>Add plugin name to <code>plugins</code> in <code>_config.yml</code>.
 
 </p>
-<pre><code class="lang-yaml"><div class="line"><span class="comment">plugins:</span></div><div class="line"><span class="literal">-</span> <span class="comment">plugin</span>-<span class="comment">one</span></div><div class="line"><span class="literal">-</span> <span class="comment">plugin</span>-<span class="comment">name</div></code></pre>
+<pre><code class="lang-plain"><div class="line">plugins:</div><div class="line">- plugin-one</div><div class="line">- plugin-name</div></code></pre>
 <h3>Disable</h3>
 <p>Remove plugin name from <code>plugins</code> in <code>_config.yml</code>.
 
 </p>
-<pre><code class="lang-yaml"><div class="line"><span class="comment">plugins:</span></div><div class="line"><span class="literal">-</span> <span class="comment">plugin</span>-<span class="comment">one</div></code></pre>
+<pre><code class="lang-plain"><div class="line">plugins:</div><div class="line">- plugin-one</div></code></pre>
 <h3>Update</h3>
 <p>Execute the following command.
 
@@ -134,6 +135,15 @@
 <p>Console allows you to execute commands in command-line interface (CLI).
 
 </p>
+<p><a id="migrator"></a>
+</p>
+<h2>Migrator</h2>
+<p>Migrator helps you migrate from other system easily.
+
+</p>
+<ul>
+<li><a href="https://github.com/tommy351/hexo-plugins/tree/master/migrator/rss">hexo-migrator-rss</a> - RSS</li>
+</ul>
 <p><a id="development"></a>
 </p>
 <h2>Development</h2>

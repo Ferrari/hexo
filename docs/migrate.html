@@ -2,7 +2,7 @@
 <html>
 <head>
   <meta charset="utf-8">
-  <title>Hexo - Permalink</title>
+  <title>Hexo - Migrate</title>
   
   <meta name="description" content="A fast, simple &amp; powerful blog framework, powered by Node.js.">
   
@@ -41,34 +41,27 @@
       
 
 <article class="page">
-  <h1 class="title">Permalink</h1>
-  <div class="entry"><h2>Configure</h2>
-<p>Edit <code>permalink</code> in <code>_config.yml</code>. Here is the default:
-
-</p>
-<pre><code><div class="line"><span class="symbol">permalink:</span> <span class="symbol">:year/</span><span class="symbol">:month/</span><span class="symbol">:day/</span><span class="symbol">:title/</span></div></code></pre>
-<p>You can add the following variables in the permalink. Only the variables started with <code>:</code> is valid.
-
-</p>
+  <h1 class="title">Migrate</h1>
+  <div class="entry"><h2>Contents</h2>
 <ul>
-<li><strong>year</strong> - 4-digit year</li>
-<li><strong>month</strong> - 2-digit month</li>
-<li><strong>day</strong> - 2-digit date</li>
-<li><strong>title</strong> - The filename of the post</li>
-<li><strong>category</strong> - The category of the post. (Relative path to <code>source/_posts</code>) If the post is uncategorized, it will be <code>category_dir</code> in <code>_config.yml</code>.</li>
+<li><a href="#rss">RSS</a></li>
+<li><a href="#jekyll">Jekyll / Octopress</a></li>
 </ul>
-<p><em>（The date is based on the date set in the post）</em>
+<p><a id="rss"></a>
+</p>
+<h2>RSS</h2>
+<p>First, execute the following command to install RSS migrator plugin, and add <code>hexo-migrator-rss</code> in <code>plugins</code> field in <code>_config.yml</code>.
 
 </p>
-<h2>Example</h2>
-<p>Given a post named <code>title.md</code> with the following content:
+<pre><code class="lang-bash"><div class="line">npm install hexo-migrator-rss</div></code></pre>
+<p>After installed, execute the following command to migrate. <code>source</code> argument can be file path or URL.
 
 </p>
-<pre><code class="lang-plain"><div class="line">---</div><div class="line">layout: post</div><div class="line">title: Post Title</div><div class="line">date: 2012-10-09 14:09:37</div><div class="line">tags:</div><div class="line">- Node.js</div><div class="line">- JavaScript</div><div class="line">---</div></code></pre>
-<p>And here is the result:
-
+<pre><code class="lang-bash"><div class="line">hexo migrate rss &lt;source&gt;</div></code></pre>
+<p><a id="jekyll"></a>
 </p>
-<pre><code><div class="line">:<span class="built_in">year</span>/:<span class="built_in">month</span>/:<span class="built_in">day</span>/:title/ =&gt; /<span class="number">2012</span>/<span class="number">10</span>/<span class="number">09</span>/title/</div><div class="line">:<span class="built_in">year</span>-:<span class="built_in">month</span>-:<span class="built_in">day</span>/:title/ =&gt; /<span class="number">2012</span>-<span class="number">10</span>-<span class="number">09</span>/title/</div><div class="line">:category/title/ =&gt; /post/title/</div></code></pre>
+<h2>Jekyll / Octopress</h2>
+<p>Move files in <code>source/_posts</code> to <code>source/_posts</code> of Hexo, and modify <code>categories</code> field of articles to <code>tags</code>.</p>
 </div>
 </article>
       <footer id="footer"><div class="alignleft">
